@@ -26,8 +26,16 @@ namespace atm_transaction
                 Console.WriteLine("Enter your choice: ");
                 choice = int.Parse(Console.ReadLine());
                 switch (choice) static void Main(string[] args)
+
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("\n YOUR BALANCE IN Rs : {0} ", amount);
+                        break;
+
+                }
             }
         }
     }
-}
 
+}
