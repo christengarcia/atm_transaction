@@ -32,10 +32,27 @@ namespace atm_transaction
                     case 1:
                         Console.WriteLine("\n YOUR BALANCE IN Rs : {0} ", amount);
                         break;
+                    case 2:
+                        Console.WriteLine("\n ENTER THE AMOUNT TO WITHDRAW: ");
+                        withdraw = int.Parse(Console.ReadLine());
+                        if (withdraw % 100 != 0)
+                        {
+                            Console.WriteLine("\n PLEASE ENTER THE AMOUNT IN MULTIPLES OF 100");
+                        }
+                        else if (withdraw > (amount - 500))
+                        {
+                            Console.WriteLine("\n INSUFFICENT BALANCE");
+                        }
+                        else
+                        {
+                            amount = amount - withdraw;
+                            Console.WriteLine("\n\n PLEASE COLLECT CASH");
+                            Console.WriteLine("\n YOUR CURRENT BALANCE IS {0}", amount);
+                        }
+                        break;
 
                 }
             }
         }
     }
-
 }
