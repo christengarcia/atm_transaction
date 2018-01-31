@@ -55,7 +55,7 @@ namespace atm_transaction
                         break;
                 }
             }
-
+            Console.WriteLine("\n\n THANKS FOR USING OUR ATM SERVICE");
         }
     }
 }
