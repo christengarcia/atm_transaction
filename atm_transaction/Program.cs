@@ -50,9 +50,12 @@ namespace atm_transaction
                             Console.WriteLine("\n YOUR CURRENT BALANCE IS {0}", amount);
                         }
                         break;
-
+                    case 4:
+                        Console.WriteLine("\n THANK U USING ATM");
+                        break;
                 }
             }
+
         }
     }
 }
